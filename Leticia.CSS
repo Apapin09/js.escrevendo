@@ -1,7 +1,82 @@
-html, body {
-  margin: 0;
-  padding: 0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8B0000; /* Fundo vermelho escuro */
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-canvas {
-  display: block;
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.filme-lista {
+    margin-bottom: 20px;
+}
+
+.filme-lista ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filme-lista li {
+    background-color: #444;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filme-lista li:hover {
+    background-color: #555;
+}
+
+.filme-lista li img {
+    width: 50px;
+    height: 75px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.filme-lista li a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.filme-lista li a:hover {
+    text-decoration: underline;
+}
+
+.sinopse {
+    max-width: 400px;
+    text-align: center;
+}
+
+.sinopse h2 {
+    margin-bottom: 10px;
+}
+
+.sinopse p {
+    font-size: 16px;
+    line-height: 1.5;
 }
